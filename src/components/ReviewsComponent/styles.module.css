@@ -1,0 +1,80 @@
+.wholeCont{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    padding-bottom: 5vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 5vh;
+    color: #616161;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 5px solid #616161;
+}
+
+.imageCont{
+    width: 100%;
+    height: auto;
+    padding: 5vh 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.eachImg{
+    width: 60vh;
+    height: auto;
+    margin: 1.5vh;
+    border: 4px dashed #616161;
+}
+
+.videoCont{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eachVidCont{
+    width: 70%;
+    height: auto;
+    border: 4px dashed #616161;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eachVidContBA{
+    font-size: 3vh;
+    font-weight: 600;
+    color: crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.eachVid{
+    width: 90%;
+    height: auto;
+}
+
+@media screen and (max-width : 500px) {
+    .eachImg{
+        width: 90%;
+        height: auto;
+    }
+    .eachVidCont{
+        width: 80%;
+        flex-direction: column;
+        gap: 5vh;
+    }
+}
