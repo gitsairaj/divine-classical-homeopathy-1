@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 1000;
 }
 
 .navbarOptionsCont{
@@ -23,6 +24,7 @@
     font-size: 1.25rem;
     font-weight: 500;
     white-space: nowrap;
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,6 +124,7 @@
     border-radius: 25px;
     background-color: #9170DD;
     white-space: nowrap;
+    user-select: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
