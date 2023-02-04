@@ -1,0 +1,179 @@
+.wholeCont{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/tree2.png');
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: bottom;
+}
+
+.heading{
+    font-size: 5vh;
+    color: rgb(22, 46, 112);
+    border-bottom: 5px solid rgb(22, 46, 112);
+}
+
+.listCont{
+    width: 100%;
+    height: auto;
+    padding: 5vh 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.eachTreatmentContDisp{
+    position: relative;
+    width: 35vh;
+    height: 35vh;
+    margin: 1vh;
+    padding: 0.5vh;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #636363;
+    cursor: pointer;
+    animation: budgeOut 0.5s forwards linear;
+}
+
+.eachTreatmentContHide{
+    position: relative;
+    width: 35vh;
+    height: 35vh;
+    margin: 1vh;
+    padding: 0.5vh;
+    /* background-color: #FFFFFF; */
+    border-radius: 5px;
+    border: 1px solid #636363;
+    cursor: pointer;
+}
+
+.cardTop{
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    background-color: rgb(42, 83, 197);
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBottomDisp{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateStuff 0.5s forwards linear;
+}
+.cardBottomHide {
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardBottomDisp img{
+    width: 50%;
+    height: auto;
+}
+.cardBottomHide img {
+    width: 50%;
+    height: auto;
+}
+/* .eachTreatmentCont:hover img{
+    animation: rotateStuff 0.5s forwards linear;
+} */
+
+.defDisplay{
+    width: 100%;
+    height: 75%;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: displayDef 0.5s forwards linear ;
+}
+
+.devInvisible{
+    width: 100%;
+    height:75%;
+    font-size: 1rem; 
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hideDef 0.5s forwards linear;
+}
+
+@keyframes budgeOut {
+    0% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    100% {
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+    }
+}
+
+@keyframes displayDef {
+    0%{
+        z-index: 1;
+        opacity: 0.4;
+        transform: rotateY(0deg);
+    }
+    50%{
+        z-index: 50;
+        opacity: 0.5;
+        transform: rotateY(90deg);
+    }
+    100%{
+        z-index: 100;
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes hideDef {
+    0% {
+        z-index: 100;
+        opacity: 1;
+        transform: rotateY(180deg);
+    }
+    100% {
+        z-index: 1;
+        opacity: 0.4;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes rotateStuff {
+    0% {
+        z-index: 100;
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        z-index: 1;
+        opacity: 0.35;
+        transform: rotateY(180deg);
+    }
+}
