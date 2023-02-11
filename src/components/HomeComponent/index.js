@@ -1,15 +1,15 @@
 import { useState } from "react";
 import styles from './styles.module.css';
-// import Treatments from "../Treatments";
-// import Reviews from "../ReviewsPage";
-// import AboutMe from '../AboutMePage';
+import TreatmentComponent from '../TreatmentComponent';
+import ReviewsComponent from "../ReviewsComponent";
+import AboutMeComponent from '../AboutMeComponent';
 
 export default function HomeComponent(){
 
     return (
         <div className={styles.wholeCont}>
             <div className={styles.topBox}>
-                {/* <AboutMe /> */}
+                <AboutMeComponent />
             </div>
             <div className={styles.midBox}>
                 <div className={styles.midLBox}>
@@ -27,8 +27,8 @@ export default function HomeComponent(){
                     <div class="elfsight-app-9f4c57ef-0119-4dd9-91c1-1fbf249cfbd6"></div>
                 </div>
             </div>
-            {/* <Treatments />
-            <Reviews /> */}
+            <TreatmentComponent />
+            <ReviewsComponent />
         </div>
     )
 }

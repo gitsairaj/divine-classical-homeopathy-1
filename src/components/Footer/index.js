@@ -17,11 +17,11 @@ export default function Footer(){
                     </div>
                     <div className={styles.topL1Cont}>
                         <img src='/callIcon.png' />
-                        <p>410210</p>
+                        <p>+91 9028191233</p>
                     </div>
                     <div className={styles.topL1Cont}>
                         <img src='/emailIcon.png' />
-                        <p>410210</p>
+                        <p>drvarsha87@gmail.com</p>
                     </div>
                 </div>
                 <div className={styles.topRCont}>

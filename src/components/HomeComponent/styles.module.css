@@ -10,8 +10,7 @@
 
 .topBox{
     width: 100%;
-    min-height: 80vh;
-    border: 1px dashed green;
+    height: auto;
 }
 
 .midBox{
@@ -33,4 +32,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .midBox{
+        flex-direction: column;
+    }
+    .midLBox{
+        width: 100%;
+        padding: 1vh;
+    }
 }
