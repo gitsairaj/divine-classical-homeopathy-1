@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+.wholeCont{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    font-family: 'Lora', serif;
+}
+
+.topCont{
+    width: 100%;
+    height: 85vh;
+    background-image: url('../../../public/drImage.jpg');
+    background-repeat: no-repeat ;
+    background-size: auto 90%;
+    background-attachment: fixed;
+    background-position: right;
+    background-position-x: 100%;
+    background-position-y: 95%;
+    background-color: #647579;
+}
+
+.topLCont{
+    width: 60%;
+    height: 100%;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.heading1{
+    width: auto;
+    height: auto;
+    font-size: 5vh;
+    font-weight: 700;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.name{
+    width: auto;
+    height: auto;
+    font-size: 5vh;
+    font-weight: 400;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.desc{
+    font-size: 1rem;
+}
+
+.description{
+    display: none;
+}
+
+.bottomCont{
+    width: 100%;
+    height: auto;
+    padding: 2.5vh 5%;
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url('../../../public/tree.png');
+    background-repeat: no-repeat ;
+    background-size: auto 80%;
+    background-attachment: fixed;
+    background-position-x: 5vh ;
+    background-position-y: bottom;
+}
+
+.scheduleHeading{
+    width: max-content;
+    height: auto;
+    color: #134cb6;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-bottom: 4px solid #134cb6;
+    margin: 1vh 20% 5vh 0;
+}
+
+.scheduleCont{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.eachDayCont{
+    width: 50%;
+    height: auto;
+    gap: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.day{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #464444;
+    margin: 0;
+}
+
+.timeCont{
+    width: max-content;
+    gap: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.to{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666666;
+    margin: 0;
+}
+
+@media screen and (max-width : 900px) {
+    .topLCont{
+        width: 45%;
+        height: 100%;
+        padding: 5vh 2.5%;
+    }
+    .desc::before{
+        opacity: 0.5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .topLCont{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .heading1{
+        margin-bottom: 1vh;
+    }
+    .desc{
+        margin-bottom: 0;
+    }
+    .bottomCont{
+        background-image: none;
+    }
+    .scheduleHeading{
+        margin-right: 40%;
+    }
+    .scheduleCont{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .topCont{
+        background-size: 100%;
+        background-color: rgba(12, 82, 61, 0.9);
+    }
+    .topLCont{
+        display: none;
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        padding: 2vh 5%;
+        display: block;
+        color: #464444;
+    }
+    .heading1{
+        width: max-content;
+        border-bottom: 3px solid #464444 ;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .topCont{
+        background-size: auto 90%;
+    }
+    .scheduleHeading{
+        margin-right: 0;
+    }
+    .bottomCont{
+        justify-content: center;
+        align-items: center;
+    }
+    .scheduleCont{
+        width: 100%;
+    }
+}

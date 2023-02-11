@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 .wholeCont{
     position: relative;
     width: 100%;
@@ -5,6 +7,7 @@
     bottom: 0;
     background-color: #282828;
     z-index: 100;
+    font-family: 'Lora', serif;
 }
 
 .topCont{

@@ -16,8 +16,10 @@
 
 .heading{
     font-size: 5vh;
-    color: rgb(22, 46, 112);
-    border-bottom: 5px solid rgb(22, 46, 112);
+    font-weight: 700;
+    color: #134cb6;
+    border-bottom: 5px solid #134cb6;
+    white-space: nowrap;
 }
 
 .listCont{
@@ -175,5 +177,17 @@
         z-index: 1;
         opacity: 0.35;
         transform: rotateY(180deg);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wholeCont{
+        background-size: 50% auto;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wholeCont{
+        background-size: 70% auto;
     }
 }

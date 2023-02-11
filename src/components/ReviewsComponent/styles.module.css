@@ -11,10 +11,10 @@
 
 .heading{
     font-size: 5vh;
-    color: #616161;
-    font-weight: 600;
+    font-weight: 700;
+    color: #134cb6;
+    border-bottom: 5px solid #134cb6;
     white-space: nowrap;
-    border-bottom: 5px solid #616161;
 }
 
 .imageCont{
