@@ -1,8 +1,8 @@
-import TreatmentComponent from "../../src/components/TreatmentCOmponent";
+import TreatmentComponent from "../../src/components/TreatmentComponent";
 
 export default function Treatments() {
 
-    return ( 
-            <TreatmentComponent />
+    return (
+        <TreatmentComponent />
     )
 }
