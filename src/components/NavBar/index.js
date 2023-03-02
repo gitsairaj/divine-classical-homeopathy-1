@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import styles from './styles.module.css';
 import Link from 'next/link';
+import Loading from "../Loading";
 
-export default function Navbar() {
+export default function Navbar({ openMenu ,setOpenMenu}) {
 
     const [page , setPage] = useState('Home');
-    const [openMenu , setOpenMenu] = useState(false);
 
     return (
         <>
+        <Loading />
         <div className={styles.navbarCont} onClick={e => setOpenMenu(false)} >
             <Link href='https://api.whatsapp.com/send?phone=9028191233' legacyBehavior>
               <a target='_blank'>

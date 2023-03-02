@@ -36,6 +36,7 @@
     height: auto;
     font-size: 5vh;
     font-weight: 700;
+    margin: 0vh;
     border-bottom: 3px solid #FFFFFF;
 }
 
@@ -49,6 +50,10 @@
 }
 
 .desc{
+    font-size: 1rem;
+}
+
+.desc2{
     font-size: 1rem;
 }
 
@@ -106,6 +111,10 @@
     font-weight: 500;
     color: #464444;
     margin: 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 1vh;
 }
 
 .timeCont{
@@ -121,6 +130,14 @@
     font-weight: 400;
     color: #666666;
     margin: 0;
+}
+
+.redText{
+    font-size: 2rem;
+    font-weight: 600;
+    color: brown;
+    margin-right: 10vw;
+    white-space: nowrap;
 }
 
 @media screen and (max-width : 900px) {
@@ -150,12 +167,26 @@
     }
     .bottomCont{
         background-image: none;
+        align-items: center;
     }
     .scheduleHeading{
         margin-right: 40%;
     }
     .scheduleCont{
-        width: 80%;
+        width: 100%;
+        padding: 2.5vh 0;
+    }
+    .redText{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width : 700px) {
+    .name{
+        font-size: 4vh;
+    }
+    .desc{
+        margin: 0;
     }
 }
 
@@ -178,6 +209,9 @@
         width: max-content;
         border-bottom: 3px solid #464444 ;
     }
+    .scheduleHeading{
+        margin-right: 0;
+    }
 }
 
 @media screen and (max-width : 500px) {
@@ -187,11 +221,26 @@
     .scheduleHeading{
         margin-right: 0;
     }
-    .bottomCont{
-        justify-content: center;
-        align-items: center;
+    .eachDayCont{
+        width: 50vh;
     }
-    .scheduleCont{
-        width: 100%;
+    .timeCont{
+        gap: 1vh;
+    }
+    .day{
+        width: auto;
+        font-size: 1.5rem;
+    }
+    .redText{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .day{
+        font-size: 1rem;
+    }
+    .redText{
+        font-size: 1.25rem;
     }
 }

@@ -11,10 +11,14 @@ export default function Footer(){
             <div className={styles.topCont}>
                 <div className={styles.topLCont}>
                     <img src='/logo.png' className={styles.topLImage} />
-                    <div className={styles.topL1Cont}>
-                        <img src='/locationIcon.png' />
-                        <p>Plot no. 38, Shop no 4, Gayatri Sankul CHS, Sector 20, Kharghar, Navi Mumbai, Maharashtra 410210</p>
-                    </div>
+                    <Link href='/' legacyBehavior>
+                      <a target='_blank'>
+                        <div className={styles.topL1Cont}>
+                            <img src='/locationIcon.png' />
+                            <p>Plot no. 38, Shop no 4, Gayatri Sankul CHS, Sector 20, Kharghar, Navi Mumbai, Maharashtra 410210</p>
+                        </div>
+                      </a>
+                    </Link>
                     <div className={styles.topL1Cont}>
                         <img src='/callIcon.png' />
                         <p>+91 9028191233</p>

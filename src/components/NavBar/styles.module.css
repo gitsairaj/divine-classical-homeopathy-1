@@ -25,15 +25,22 @@
 
 .navbarOptions{
     width: 100%;
-    height: 15vh;
+    height: 2rem;
+    padding: 1vh;
     color: #616161;
     font-size: 1.25rem;
     font-weight: 500;
     white-space: nowrap;
     user-select: none;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navbarOptions:hover{
+    background-color: #f7d9d9;
+    
+    
 }
 
 .navbarChatCont{
@@ -145,9 +152,9 @@
     background-color: #FFFFFF;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .navbarBox1{
-        height: 12vh;
+        height: 10vh;
         width: auto;
     }
 }
@@ -160,12 +167,13 @@
         border-radius: 0px;
         bottom: 0;
     }
+    .navbarBox1{
+        height: 11vh;
+        width: auto;
+    }
 }
 
 @media screen and (max-width:700px) {
-    .navbarBox1{
-        height: 11vh;
-    }
     .navbarOptionsCont{
         width: 60%;
     }
@@ -215,5 +223,11 @@
     }
     .navbarChatCont{
         right: 2.5vh;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .navbarBox1{
+        height: 10vh;
     }
 }
