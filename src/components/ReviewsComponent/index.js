@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 
 export default function ReviewsComponent(){
 
-    const imgNames = ['/reviewsImg1.jpg','/reviewsImg2.jpg','/reviewsImg3.png',
+    const imgNames = ['/reviewsImg1.1.png','/reviewsImg2.jpg','/reviewsImg3.png',
                     '/reviewsImg4.jpg','/reviewsImg5.jpg','/reviewsImg6.png'];
     const vidNames = [{'1':'/reviewsVid1a.mp4' , '2':'/reviewsVid1b.mp4'}];
 
