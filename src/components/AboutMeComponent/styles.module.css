@@ -13,11 +13,11 @@
     background-image: url(./../../../public/drImage.jpg);
     background-repeat: no-repeat ;
     background-size: auto 90%;
-    background-attachment: fixed;
+/*     background-attachment: fixed; */
     background-position: right;
     background-position-x: 100%;
     background-position-y: 95%;
-    background-color: #647579;
+/*     background-color: #647579; */
 }
 
 .topLCont{
