@@ -10,7 +10,8 @@
 .topCont{
     width: 100%;
     height: 85vh;
-    background-image: url('../../../public/drImage.jpg');
+    /* background-image: url('../../../public/drImage.jpg'); */
+    background-image: url('/public/drImage.jpg');
     background-repeat: no-repeat ;
     background-size: auto 90%;
     background-attachment: fixed;
