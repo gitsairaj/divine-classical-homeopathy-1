@@ -40,9 +40,9 @@ export default function AboutMeComponent() {
                         allDays.map((item) => {
                             return (
                                 <div key={item} className={styles.timeCont}>
-                                    <p className={styles.day}> 10 <p className={styles.to}>to</p> 2 am </p>
-                                    <p className={styles.to}>-</p>
-                                    <p className={styles.day}> 5 <p className={styles.to}>to</p> 9 pm</p>
+                                    <p className={styles.day}> 10am <p className={styles.to}>-</p> 2pm </p>
+                                    <p className={styles.to}>&</p>
+                                    <p className={styles.day}> 5pm <p className={styles.to}>-</p> 9pm</p>
                                 </div>
                             )
                         })
