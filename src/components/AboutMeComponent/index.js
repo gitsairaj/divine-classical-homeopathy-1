@@ -7,7 +7,7 @@ export default function AboutMeComponent() {
 
     return (
         <div className={styles.wholeCont}>
-            <div className={styles.topCont}>
+            <div className={styles.topCont} style= {{backgroundImage: "url('/drImage.jpg')"}}>
                 <div className={styles.topLCont}>
                     <p className={styles.heading1}>Biography</p>
                     <p className={styles.name}>Dr Varsha Magar</p>
@@ -40,9 +40,9 @@ export default function AboutMeComponent() {
                         allDays.map((item) => {
                             return (
                                 <div key={item} className={styles.timeCont}>
-                                    <p className={styles.day}> 10 <p className={styles.to}>to</p> 2 am </p>
-                                    <p className={styles.to}>-</p>
-                                    <p className={styles.day}> 5 <p className={styles.to}>to</p> 9 pm</p>
+                                    <p className={styles.day}> 10am <p className={styles.to}>-</p> 2pm </p>
+                                    <p className={styles.to}>&</p>
+                                    <p className={styles.day}> 5pm <p className={styles.to}>-</p> 9pm</p>
                                 </div>
                             )
                         })
