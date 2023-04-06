@@ -7,7 +7,7 @@ export default function AboutMeComponent() {
 
     return (
         <div className={styles.wholeCont}>
-            <div className={styles.topCont}>
+            <div className={styles.topCont} style= {{backgroundImage: "url('/drImage.jpg')"}}>
                 <div className={styles.topLCont}>
                     <p className={styles.heading1}>Biography</p>
                     <p className={styles.name}>Dr Varsha Magar</p>
