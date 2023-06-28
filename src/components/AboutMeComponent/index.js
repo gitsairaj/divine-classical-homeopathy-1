@@ -1,5 +1,6 @@
 import styles from './styles.module.css';
 import Image from 'next/image';
+import Head from 'next/head';
 
 export default function AboutMeComponent() {
 
@@ -7,6 +8,15 @@ export default function AboutMeComponent() {
 
     return (
         <div className={styles.wholeCont}>
+            <Head>
+                <title>Divine Classical Homeopathy</title>
+                <link rel="logo icon" href="/logo.png" />
+                <meta charset="UTF-8" />
+                <meta name="description" content="Homeopathy website"/>
+                <meta name="keywords" content="HTML, CSS, JavaScript, Next.js"/>
+                <meta name="author" content="Shiva Gowtham Kale"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            </Head>
             <div className={styles.topCont} style= {{backgroundImage: "url('/drImage.jpg')"}}>
                 <div className={styles.topLCont}>
                     <p className={styles.heading1}>Biography</p>

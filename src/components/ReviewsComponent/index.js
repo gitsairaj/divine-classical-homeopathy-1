@@ -1,4 +1,5 @@
 import styles from './styles.module.css';
+import Head from 'next/head';
 
 export default function ReviewsComponent(){
 
@@ -8,6 +9,15 @@ export default function ReviewsComponent(){
 
     return (
         <div className={styles.wholeCont}>
+            <Head>
+                <title>Divine Classical Homeopathy</title>
+                <link rel="logo icon" href="/logo.png" />
+                <meta charset="UTF-8" />
+                <meta name="description" content="Homeopathy website"/>
+                <meta name="keywords" content="HTML, CSS, JavaScript, Next.js"/>
+                <meta name="author" content="Shiva Gowtham Kale"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            </Head>
             <h3 className={styles.heading} >Customer Reviews</h3>
             <div className={styles.imageCont}>
             {

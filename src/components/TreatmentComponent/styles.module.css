@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 .wholeCont{
     width: 100%;
     height: auto;
@@ -12,6 +14,7 @@
     background-attachment: fixed;
     background-position-x: right;
     background-position-y: bottom;
+    font-family: 'Lora', serif;
 }
 
 .heading{
