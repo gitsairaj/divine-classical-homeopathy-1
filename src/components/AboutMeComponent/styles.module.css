@@ -17,6 +17,7 @@
     background-position: right;
     background-position-x: 100%;
     background-position-y: 95%;
+    color: #ffffff;
 }
 
 .topLCont{
@@ -33,6 +34,7 @@
 .heading1{
     width: auto;
     height: auto;
+    color: #ffffff;
     font-size: 5vh;
     font-weight: 700;
     margin: 0vh;
@@ -42,6 +44,7 @@
 .name{
     width: auto;
     height: auto;
+    color: #ffffff;
     font-size: 5vh;
     font-weight: 400;
     user-select: none;
@@ -50,10 +53,12 @@
 
 .desc{
     font-size: 1rem;
+    color: #ffffff;
 }
 
 .desc2{
     font-size: 1rem;
+    color: #ffffff;
 }
 
 .description{

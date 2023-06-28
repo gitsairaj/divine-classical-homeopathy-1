@@ -1,6 +1,7 @@
 import styles from './styles.module.css';
 import { useState } from 'react';
 import SearchBar from '../SearchBar';
+import Head from 'next/head';
 
 export default function TreatmentComponent(){
 
@@ -29,6 +30,15 @@ export default function TreatmentComponent(){
 
     return (
         <div className={styles.wholeCont} onClick={e => setDispDef(false)}>
+            <Head>
+                <title>Divine Classical Homeopathy</title>
+                <link rel="logo icon" href="/logo.png" />
+                <meta charset="UTF-8" />
+                <meta name="description" content="Homeopathy website"/>
+                <meta name="keywords" content="HTML, CSS, JavaScript, Next.js"/>
+                <meta name="author" content="Shiva Gowtham Kale"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            </Head>
             <p className={styles.heading}>Treatments We Provide</p>
             <SearchBar 
             searchList={treatments} 
